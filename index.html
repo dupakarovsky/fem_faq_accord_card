@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- displays site properly based on user's device -->
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Frontend Mentor | FAQ Accordion Card</title>
+      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+      <style>
+         .attribution {
+            font-size: 11px;
+            text-align: center;
+         }
+         .attribution a {
+            color: hsl(228, 45%, 44%);
+         }
+      </style>
+   </head>
+   <body>
+      <main class="main">
+         <div class="card">
+            <div class="columns-wrapper">
+               <!-- Left Column  -->
+               <div class="left-column">
+                  <picture>
+                     <source srcset="assets/illustration-woman-online-mobile.svg" media="(max-width: 559px)" />
+                     <source srcset="assets/illustration-woman-online-desktop.svg" media="(min-width: 560px)" />
+                     <img src="assets/illustration-woman-online-desktop.svg" alt="Woman online illustration" />
+                  </picture>
+               </div>
+               <!-- Right Column -->
+               <div class="right-column">
+                  <h3>FAQ</h3>
+                  <div class="accordeon">
+                     <!-- First Listing  -->
+                     <input class="accordeon__select" type="checkbox" name="select" id="A" />
+
+                     <div class="accordeon__question accordeon__question--1">
+                        <span>How many members can I invite</span>
+                        <span><img src="assets/icon-arrow-down.svg" /></span>
+                     </div>
+
+                     <div class="accordeon__answer accordeon__answer--1">
+                        <p>
+                           You can invite up to 2 additional users on the Free plan. There is no limit on team members
+                           for the Premium plan.
+                        </p>
+                     </div>
+
+                     <!-- Second Listing  -->
+                     <input class="accordeon__select" type="checkbox" name="select" id="B" />
+
+                     <div class="accordeon__question accordeon__question--1">
+                        <span>What is the maximum file upload size?</span>
+                        <span><img src="assets/icon-arrow-down.svg" /></span>
+                     </div>
+
+                     <div class="accordeon__answer accordeon__answer--1">
+                        <p>No more than 2GB. All files in your account must fit your alloted storage space.</p>
+                     </div>
+                     <!-- Third Listing  -->
+                     <input class="accordeon__select" type="checkbox" name="select" id="C" />
+
+                     <div class="accordeon__question accordeon__question--1">
+                        <span>How do I reset my password?</span>
+                        <span><img src="assets/icon-arrow-down.svg" /></span>
+                     </div>
+
+                     <div class="accordeon__answer accordeon__answer--1">
+                        <p>
+                           Click “Forgot password” from the login page or “Change password” from your profile page. A
+                           reset link will be emailed to you.
+                        </p>
+                     </div>
+                     <!-- Forth Listing  -->
+                     <input class="accordeon__select" type="checkbox" name="select" id="D" />
+
+                     <div class="accordeon__question accordeon__question--1">
+                        <span>Can I cancel my subscription?</span>
+                        <span><img src="assets/icon-arrow-down.svg" /></span>
+                     </div>
+
+                     <div class="accordeon__answer accordeon__answer--1">
+                        <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+                     </div>
+
+                     <!-- Fifth Listing  -->
+                     <input class="accordeon__select" type="checkbox" name="select" id="D" />
+
+                     <div class="accordeon__question accordeon__question--1">
+                        <span>Do you provide additional support?</span>
+                        <span><img src="assets/icon-arrow-down.svg" /></span>
+                     </div>
+
+                     <div class="accordeon__answer accordeon__answer--1">
+                        <p>
+                           Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                        </p>
+                     </div>
+
+                     <!-- BOX -->
+                     <img class="box" src="assets/illustration-box-desktop.svg" alt="Box illustration" />
+
+                     <!-- Blocker -->
+                     <div class="accordeon__blocker"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+
+      <div class="attribution" hidden>
+         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded
+         by <a href="#">Your Name Here</a>.
+      </div>
+   </body>
+</html>
